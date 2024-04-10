@@ -10,4 +10,6 @@ $params = [":id" => $_GET["id"]];
 $fruit = $db -> execute($query, $params) 
              -> fetch();
 
+$title = $fruit["name"] . " info";
+
 require  "views/fruits/show.view.php";
